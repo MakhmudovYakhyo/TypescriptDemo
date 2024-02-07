@@ -1,0 +1,39 @@
+export var myString:string = "Welcome to Typescript";
+export let myString1 = "Welcome";
+
+//charAt()
+console.log(myString.charAt(0)); //W
+console.log(myString.charAt(2)); //l
+
+//concat()
+var str1:string="welcome";
+var str2:string=" to typescript";
+var str3:string=" and protractor";
+console.log(str1.concat(str2).concat(str3)); //returns "welcome to typescript and protractor"
+
+//replcae()
+var str="Typescript Programming";
+console.log(str.replace('i','x'));
+console.log(str.replace('Type','Java'));
+
+//split()
+var fruits:string="Apple, Banana, Orange";
+console.log(fruits.split(' '));  //[ 'Apple,', 'Banana,', 'Orange' ]
+console.log(fruits.split(' ', 2));  //[ 'Apple,', 'Banana,' ]
+console.log(fruits.split(' ', 1));  //[ 'Apple,']
+
+//substring()
+str="Welcome";
+console.log(str.substring(0, 3));  //Wel
+console.log(str.substring(2, 5)); //lco
+
+//toUpperCase() && toLowerCase()
+str = "Typescript Programming";
+console.log(str.toLowerCase());
+console.log(str.toUpperCase());
+
+//trim()
+str="   welcome   ";
+console.log(str.trim());
+console.log("#" + str.trimStart());
+console.log(str.trimEnd() + "#");
